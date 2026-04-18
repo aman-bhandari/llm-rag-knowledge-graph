@@ -1,0 +1,22 @@
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Editors
+.vscode/
+.idea/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Python build
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Obsidian local workspace state (don't commit per-user view state)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
