@@ -5,14 +5,14 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Topic: RAG](https://img.shields.io/badge/topic-RAG-green.svg)](https://github.com/topics/rag)
 
-Chronicle editorial format + wiki-as-RAG graph shape for LLM-powered research labs. 5 synthetic cross-linked concept pages, 2 sample chronicles, a zero-dependency Python retrieval example.
+Chronicle editorial format + wiki-as-RAG graph shape for LLM-powered knowledge work. 5 cross-linked concept pages, 2 sample chronicles, a zero-dependency Python retrieval example.
 
 ## What this is
 
 A template for the written output of a learning-lab or research-lab workflow, with two coupled pieces:
 
 1. **Chronicle editorial format.** A long-form narrative format for documenting a learning or research session. Specifies a frontmatter contract (required + optional fields, including the `loop-beats` audit surface for concept-teaching sessions), a body shape (Opening → Work → Break → Click), and five pre-publish quality gates. Two sample chronicles ship in `chronicle/examples/` as conforming references.
-2. **Wiki-as-RAG graph shape.** A convention for an atomic-concept wiki where each page is a single concept and pages cross-link by `[[wiki-link]]` references. The graph is Obsidian-compatible (open the `wiki/` directory as a vault) and walkable by a small Python script (`scripts/wiki_traverse.py`) using the standard library only — no embeddings layer, no vector DB, no external dependencies. Five synthetic concept pages ship across two categories (`python/`, `rag/`).
+2. **Wiki-as-RAG graph shape.** A convention for an atomic-concept wiki where each page is a single concept and pages cross-link by `[[wiki-link]]` references. The graph is Obsidian-compatible (open the `wiki/` directory as a vault) and walkable by a small Python script (`scripts/wiki_traverse.py`) using the standard library only — no embeddings layer, no vector DB, no external dependencies. Five concept pages ship across two categories (`python/`, `rag/`).
 
 The two pieces are coupled: chronicles reference wiki concepts via a `wiki-nodes` frontmatter field, so a publisher can render "Concepts used in this session" as a sidebar, and a retrieval layer can walk from a chronicle into the concept graph that supports it.
 
@@ -107,21 +107,11 @@ Runs:
 
 CI runs the same gates on every push via `.github/workflows/ci.yml`.
 
-## Honest extract statement
-
-This artifact was extracted from a private research lab's publishing scaffolding. The extract keeps:
-
-- The chronicle frontmatter contract (adapted generically; no project-specific naming)
-- The wiki directory shape, node format, link convention, log schema
-- A zero-dependency retrieval example demonstrating graph traversal
-
-The extract excludes everything personal: real session logs, real concept pages, the lab's actual curriculum, project-specific role vocabulary, and any named individuals. The two sample chronicles and five wiki nodes that ship here are synthetic — written to conform to the format, not copied from the source corpus.
-
 ## Related artifacts
 
 - `claude-code-mcp-qa-automation` — end-to-end QA automation built on Claude Code + MCP patterns
-- `claude-code-agent-skills-framework` — research scaffold for AI-engineering coaching with Claude Code
-- `nextjs-16-mdx-research-publisher` — static publisher for research labs (can render this repo's chronicle corpus)
+- `claude-code-agent-skills-framework` — `.claude/` framework for AI-engineering workflows
+- `nextjs-16-mdx-research-publisher` — static publisher for research notes (can render this repo's chronicle corpus)
 - `claude-multi-agent-protocol` — HANDOVER + SYNC inter-repo protocol
 
 ## License
