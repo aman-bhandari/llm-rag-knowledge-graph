@@ -1,5 +1,10 @@
 # llm-rag-knowledge-graph
 
+[![CI](https://github.com/aman-bhandari/llm-rag-knowledge-graph/actions/workflows/ci.yml/badge.svg)](https://github.com/aman-bhandari/llm-rag-knowledge-graph/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![Topic: RAG](https://img.shields.io/badge/topic-RAG-green.svg)](https://github.com/topics/rag)
+
 Chronicle editorial format + wiki-as-RAG graph shape for LLM-powered research labs. 5 synthetic cross-linked concept pages, 2 sample chronicles, a zero-dependency Python retrieval example.
 
 ## What this is
