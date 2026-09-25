@@ -107,13 +107,6 @@ Runs:
 
 CI runs the same gates on every push via `.github/workflows/ci.yml`.
 
-## Related artifacts
-
-- `claude-code-mcp-qa-automation` — end-to-end QA automation built on Claude Code + MCP patterns
-- `claude-code-agent-skills-framework` — `.claude/` framework for AI-engineering workflows
-- `nextjs-16-mdx-research-publisher` — static publisher for research notes (can render this repo's chronicle corpus)
-- `claude-multi-agent-protocol` — HANDOVER + SYNC inter-repo protocol
-
 ## License
 
 MIT © 2026 Aman Bhandari. See `LICENSE`.
